@@ -21,7 +21,12 @@ export default function ContactSection() {
           {companyInfo.motto}
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-10">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 mb-10 lg:mb-14">
+          <ContactForm />
+          <ContactMap />
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {companyInfo.representatives.map((rep) => (
             <a
               key={rep.tel}
@@ -76,11 +81,6 @@ export default function ContactSection() {
             </p>
             <span className="mt-3 text-orange text-xs font-semibold">View on map →</span>
           </a>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          <ContactForm />
-          <ContactMap />
         </div>
       </div>
     </section>
