@@ -23,21 +23,21 @@ export default function GlanceSection() {
                 ref={ref}
                 className="absolute right-4 top-1/2 -translate-y-1/2 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.12)] px-8 py-6 text-center min-w-[130px] border border-border"
               >
-                <p className={`text-4xl font-bold text-orange ${inView ? "stat-pop" : ""}`}>7+</p>
-                <p className="text-sm text-muted mt-1 font-medium">Services</p>
+                <p className={`text-5xl font-bold text-orange ${inView ? "stat-pop" : ""}`}>7+</p>
+                <p className="text-base text-muted mt-1 font-medium">Services</p>
               </div>
             </div>
-            <p className="text-xs text-muted italic mt-4">( These highlights reflect SCLE India capabilities. )</p>
+            <p className="text-sm text-muted italic mt-4">( These highlights reflect SCLE India capabilities. )</p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={100}>
             <h2 className="section-heading mb-5">{companyInfo.shortName} At A Glance</h2>
-            <h3 className="text-[15px] font-bold text-navy mb-5 leading-snug">
+            <h3 className="text-base lg:text-lg font-bold text-navy mb-5 leading-snug">
               Logistics &amp; export capabilities from Pune, India
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3.5">
               {glanceDetails.map((d) => (
-                <li key={d} className="flex items-start gap-3 text-[13px] text-muted leading-[1.7]">
+                <li key={d} className="flex items-start gap-3 text-[15px] lg:text-base text-muted leading-[1.7]">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange mt-2 shrink-0" />
                   {d}
                 </li>
@@ -47,11 +47,11 @@ export default function GlanceSection() {
               {glanceStats.slice(0, 4).map((s, i) => (
                 <div
                   key={s.label}
-                  className={`text-center py-3 bg-section-bg ${inView ? "stat-pop" : ""}`}
+                  className={`text-center py-4 bg-section-bg ${inView ? "stat-pop" : ""}`}
                   style={{ animationDelay: `${i * 70}ms` }}
                 >
-                  <p className="text-lg font-bold text-orange">{s.value}</p>
-                  <p className="text-[9px] uppercase tracking-wider text-muted mt-1">{s.label}</p>
+                  <p className="text-xl font-bold text-orange">{s.value}</p>
+                  <p className="text-xs uppercase tracking-wider text-muted mt-1.5">{s.label}</p>
                 </div>
               ))}
             </div>
