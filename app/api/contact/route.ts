@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { buildContactEmailHtml, buildContactEmailText } from "../../lib/contactEmailTemplate";
+import { buildContactEmailHtml, buildContactEmailText, buildAutoReplyHtml, buildAutoReplyText } from "../../lib/contactEmailTemplate";
 
 type ContactPayload = {
   name: string;
@@ -78,6 +78,18 @@ export async function POST(request: Request) {
       text: buildContactEmailText({ name, email, phone, subject, message }),
       html: buildContactEmailHtml({ name, email, phone, subject, message }),
     });
+
+    try {
+      await transporter.sendMail({
+        from: `"SCLE India" <${smtpEmail}>`,
+        to: email,
+        subject: "Thank you for contacting SCLE India",
+        text: buildAutoReplyText({ name }),
+        html: buildAutoReplyHtml({ name }),
+      });
+    } catch (autoReplyErr) {
+      console.error("Contact form auto-reply error:", autoReplyErr);
+    }
 
     return NextResponse.json({ ok: true });
   } catch (err) {

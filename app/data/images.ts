@@ -1,6 +1,8 @@
 /** Local site images — stored in /public/images for reliable loading */
 export const siteImages = {
   hero: {
+    ethanolPlant: "/images/hero-ethanol-plant.png",
+    industrialAerial: "/images/hero-industrial-aerial.png",
     warehouse: "/images/hero-warehouse.jpg",
     export: "/images/hero-export.jpg",
     freight: "/images/hero-freight.jpg",
@@ -41,6 +43,13 @@ export const siteImages = {
   saleProducts: {
     ethanol: "/images/ethanol.jpg",
     ethanolHero: "/images/ethanol-hero.jpg",
+    ethanolGrain: "/images/grain-ethanol.jpg",
+    ethanolSugarcane: "/images/sugarcane.jpg",
+    ethanolMaize: "/images/ethanol-maize-powder.jpg",
+    ethanolDiagramGrain: "/images/ethanol-diagram-grain.png",
+    ethanolGrainSteps: "/images/ethanol-grain-steps.png",
+    ethanolDiagramSugarcane: "/images/ethanol-diagram-sugarcane.png",
+    ethanolTypesOverview: "/images/ethanol-types-overview.png",
     molasses: "/images/molasses.jpg",
     molassesHero: "/images/molasses-hero.jpg",
     ena: "/images/ena.jpg",

@@ -151,3 +151,63 @@ export function buildContactEmailHtml(data: {
 </body>
 </html>`;
 }
+
+export function buildAutoReplyText(data: { name: string }): string {
+  return [
+    `Dear ${data.name},`,
+    "",
+    "Thank you for contacting SCLE India. We have received your message and our team will get back to you within 1–2 business days.",
+    "",
+    "Best regards,",
+    "SCLE India Team",
+    "Shree Chintamani Logistics & Exports India Pvt. Ltd.",
+  ].join("\n");
+}
+
+export function buildAutoReplyHtml(data: { name: string }): string {
+  const name = escapeHtml(data.name);
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank you — SCLE India</title>
+</head>
+<body style="margin:0;padding:0;background-color:#eef1f5;font-family:Arial,Helvetica,sans-serif;color:#1a2b3c;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#eef1f5;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,51,102,0.10);">
+          <tr>
+            <td style="background:linear-gradient(135deg,#003366 0%,#1a4a7a 100%);padding:28px 32px;">
+              <h1 style="margin:0;font-size:22px;line-height:1.3;color:#ffffff;font-weight:700;">Thank You for Contacting Us</h1>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 32px;">
+              <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#334155;">Dear <strong>${name}</strong>,</p>
+              <p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:#334155;">
+                Thank you for contacting SCLE India. We have received your message and our team will get back to you within 1–2 business days.
+              </p>
+              <p style="margin:0;font-size:15px;line-height:1.7;color:#334155;">
+                Best regards,<br />
+                <strong style="color:#003366;">SCLE India Team</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background:#f8fafc;padding:18px 32px;border-top:1px solid #edf0f4;">
+              <p style="margin:0;font-size:12px;line-height:1.6;color:#7a8798;text-align:center;">
+                Shree Chintamani Logistics &amp; Exports India Pvt. Ltd.<br />
+                <span style="color:#f26522;font-weight:600;">DELIVERING TRUST ACROSS BORDERS</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}

@@ -5,13 +5,13 @@ export const heroSlides = [
     title: "Your Gateway to Global Trade.",
     subtitle:
       "Business First • Relationship Forever — your partner in logistics, exports, and bulk commodities.",
-    image: siteImages.hero.warehouse,
+    image: siteImages.hero.ethanolPlant,
   },
   {
     title: "Ethanol, Molasses, ENA, Ginger & Garlic.",
     subtitle:
       "Bulk supply of premium ethanol, molasses, extra neutral alcohol, ginger, and garlic — with reliable logistics.",
-    image: siteImages.saleProducts.ethanolHero,
+    image: siteImages.hero.industrialAerial,
   },
   {
     title: "Transforming.",

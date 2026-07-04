@@ -2,6 +2,7 @@ import Link from "next/link";
 import { companyInfo } from "../data/companyInfo";
 import type { SaleProductPage } from "../data/productPages";
 import { productIcons } from "./ProductIcons";
+import EthanolTypesSection from "./EthanolTypesSection";
 
 export default function SaleProductDetail({ product }: { product: SaleProductPage }) {
   const Icon = productIcons[product.icon];
@@ -64,6 +65,8 @@ export default function SaleProductDetail({ product }: { product: SaleProductPag
           </div>
         </div>
       </section>
+
+      {product.slug === "ethanol" && <EthanolTypesSection />}
 
       {/* Highlights */}
       <section className="py-14 lg:py-16 bg-section-bg">

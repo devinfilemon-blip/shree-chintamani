@@ -26,7 +26,7 @@ export default function HeroSection() {
             className={`absolute inset-0 transition-opacity duration-[1200ms] ${i === current ? "opacity-100" : "opacity-0"}`}
           >
             <div
-              className={`absolute inset-0 bg-cover bg-center ${i === current ? "hero-ken-burns" : ""}`}
+              className={`absolute inset-0 bg-cover bg-center bg-no-repeat ${i === current ? "hero-ken-burns" : ""}`}
               style={{ backgroundImage: `url(${s.image})` }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/55 to-black/15" />
