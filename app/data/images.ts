@@ -1,0 +1,53 @@
+/** Local site images — stored in /public/images for reliable loading */
+export const siteImages = {
+  hero: {
+    warehouse: "/images/hero-warehouse.jpg",
+    export: "/images/hero-export.jpg",
+    freight: "/images/hero-freight.jpg",
+    global: "/images/hero-global.jpg",
+  },
+  products: {
+    freight: "/images/freight.jpg",
+    export: "/images/export.jpg",
+    import: "/images/import.jpg",
+    customs: "/images/customs.jpg",
+    warehousing: "/images/warehousing.jpg",
+    cargo: "/images/cargo-plane.jpg",
+    documentation: "/images/documentation.jpg",
+  },
+  about: "/images/about-pune.jpg",
+  glance: "/images/glance.jpg",
+  sustainability: {
+    environment: "/images/sustainability-environment.jpg",
+    social: "/images/sustainability-social.jpg",
+    governance: "/images/sustainability-governance.jpg",
+  },
+  caseStudies: {
+    europe: "/images/case-europe-export.jpg",
+    multimodal: "/images/case-multimodal.jpg",
+    import: "/images/case-import.jpg",
+  },
+  reports: {
+    "2024": "/images/report-2024.jpg",
+    "2026": "/images/report-2026.jpg",
+  },
+  videos: {
+    export: "/images/video-export.jpg",
+    customs: "/images/video-customs.jpg",
+    freight: "/images/video-freight.jpg",
+    warehouse: "/images/video-warehouse.jpg",
+    company: "/images/video-company.jpg",
+  },
+  saleProducts: {
+    ethanol: "/images/ethanol.jpg",
+    ethanolHero: "/images/ethanol-hero.jpg",
+    molasses: "/images/molasses.jpg",
+    molassesHero: "/images/molasses-hero.jpg",
+    ena: "/images/ena.jpg",
+    enaHero: "/images/ena-hero.jpg",
+    ginger: "/images/ginger.jpg",
+    gingerHero: "/images/ginger-hero.jpg",
+    garlic: "/images/garlic.jpg",
+    garlicHero: "/images/garlic-hero.jpg",
+  },
+};
