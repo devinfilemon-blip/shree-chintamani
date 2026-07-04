@@ -29,7 +29,8 @@ export default function HeroSection() {
               className={`absolute inset-0 bg-cover bg-center ${i === current ? "hero-ken-burns" : ""}`}
               style={{ backgroundImage: `url(${s.image})` }}
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/55 to-black/15" />
+            <div className="absolute inset-0 bg-black/15" />
           </div>
         ))}
 
@@ -52,10 +53,10 @@ export default function HeroSection() {
 
         <div className="relative z-10 h-full max-w-[1320px] mx-auto px-4 lg:px-8 flex items-center">
           <div className="max-w-2xl sm:pr-20 lg:pr-28" key={key}>
-            <h1 className="text-[1.65rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-white leading-[1.15] hero-line-in hero-line-in-1">
+            <h1 className="text-[1.65rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-white leading-[1.15] hero-line-in hero-line-in-1 [text-shadow:0_2px_16px_rgba(0,0,0,0.85)]">
               {slide.title}
             </h1>
-            <p className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg text-white/95 leading-relaxed max-w-xl hero-line-in hero-line-in-2">
+            <p className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg text-white leading-relaxed max-w-xl hero-line-in hero-line-in-2 [text-shadow:0_1px_10px_rgba(0,0,0,0.8)]">
               {slide.subtitle}
             </p>
           </div>
