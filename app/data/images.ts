@@ -3,7 +3,7 @@ export const siteImages = {
   hero: {
     sugarcaneHarvest: "/images/hero-sugarcane-harvest.jpg",
     ethanolPlant: "/images/hero-ethanol-plant.png",
-    industrialAerial: "/images/hero-industrial-aerial.png",
+    industrialAerial: "/images/hero-industrial-aerial.jpg",
     warehouse: "/images/hero-warehouse.jpg",
     export: "/images/hero-export.jpg",
     freight: "/images/hero-freight.jpg",
