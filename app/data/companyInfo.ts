@@ -5,6 +5,10 @@ export const companyInfo = {
   motto: "BUSINESS FIRST • RELATIONSHIP FOREVER",
   bannerSlogan: "DELIVERING TRUST ACROSS BORDERS",
   email: "sales@scleindia.com",
+  displayEmails: [
+    "shreechintamanilogisticsandexp@gmail.com",
+    "sales@scleindia.com",
+  ],
   whatsapp: "919359394076",
   phone: "7095950707",
   phoneDisplay: "+91 70959 50707",
@@ -20,12 +24,13 @@ export const companyInfo = {
     { name: "Sagar Tanaji Pisal", tel: "8830905353", display: "8830905353" },
   ],
   address: {
-    line1: "Gat No 1029, Flat No 408, 4th Floor, E Wing, Shivtara",
-    line2: "Kunjirwadi, Pune, Haveli, Maharashtra, India",
+    line1: "Shivtara Tara Alicia, Gat No 1029, Flat No 408, 4th Floor, E Wing",
+    line2: "Kunjirwadi, Pune-Solapur Road, Haveli, Maharashtra, India",
     pincode: "412201",
-    full: "Gat No 1029, Flat No 408, 4th Floor, E Wing, Shivtara, Kunjirwadi, Pune, Haveli, Maharashtra, India, 412201",
+    full: "Shivtara Tara Alicia, Gat No 1029, Flat No 408, 4th Floor, E Wing, Kunjirwadi, Pune-Solapur Road, Haveli, Maharashtra, India, 412201",
   },
-  mapsUrl: "https://maps.app.goo.gl/ALEjKXpq8zKikrho9",
+  mapsUrl: "https://share.google/s7UwidJHqC3hA5rc8",
+  mapsEmbedQuery: "Shivtara Tara Alicia, Kunjirwadi, Pune, Maharashtra 412201",
 };
 
 export const valuePropositions = [

@@ -45,20 +45,25 @@ export default function ContactSection() {
             </a>
           ))}
 
-          <a
-            href={`mailto:${companyInfo.email}`}
-            className="group flex flex-col items-center p-6 rounded-xl bg-white/5 border border-white/10 hover:border-orange/40 hover:bg-white/[0.08] transition-all text-center"
-          >
+          <div className="group flex flex-col items-center p-6 rounded-xl bg-white/5 border border-white/10 hover:border-orange/40 hover:bg-white/[0.08] transition-all text-center">
             <ContactIcon>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>
             </ContactIcon>
-            <p className="text-orange text-xs font-bold uppercase tracking-widest mt-4 mb-1">Email</p>
-            <p className="text-white font-semibold text-sm group-hover:text-orange transition-colors break-all">
-              {companyInfo.email}
-            </p>
-          </a>
+            <p className="text-orange text-xs font-bold uppercase tracking-widest mt-4 mb-2">Email</p>
+            <div className="space-y-2">
+              {companyInfo.displayEmails.map((addr) => (
+                <a
+                  key={addr}
+                  href={`mailto:${addr}`}
+                  className="block text-white font-semibold text-sm group-hover:text-orange transition-colors break-all"
+                >
+                  {addr}
+                </a>
+              ))}
+            </div>
+          </div>
 
           <a
             href={companyInfo.mapsUrl}

@@ -1,4 +1,5 @@
 import { siteImages } from "./images";
+import { saleProducts } from "./productPages";
 
 export const heroSlides = [
   {
@@ -110,32 +111,14 @@ export const sustainabilityPillars = [
   },
 ];
 
-export const caseStudies = [
-  {
-    number: "01",
-    title: "Seamless export shipment to Europe",
-    short: "Export shipment to Europe",
-    description:
-      "Coordinated a full-container export from Pune to European markets — documentation, customs clearance, and port delivery completed ahead of schedule.",
-    image: siteImages.caseStudies.europe,
-  },
-  {
-    number: "02",
-    title: "Multi-modal freight for manufacturing client",
-    short: "Multi-modal freight solutions",
-    description:
-      "Designed a cost-effective sea-air combination route reducing transit time by 40% while cutting freight costs for a Maharashtra-based manufacturer.",
-    image: siteImages.caseStudies.multimodal,
-  },
-  {
-    number: "03",
-    title: "Import clearance for industrial equipment",
-    short: "Industrial import clearance",
-    description:
-      "Handled complex import documentation and customs clearance for heavy industrial machinery, ensuring zero delays at Mumbai port.",
-    image: siteImages.caseStudies.import,
-  },
-];
+export const caseStudies = saleProducts.map((product, index) => ({
+  number: String(index + 1).padStart(2, "0"),
+  title: product.title,
+  short: product.title,
+  slug: product.slug,
+  description: product.subtitle,
+  image: product.heroImage,
+}));
 
 export const glanceStats = [
   { label: "Services", value: "7+" },

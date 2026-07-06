@@ -18,7 +18,7 @@ export const siteImages = {
     cargo: "/images/cargo-plane.jpg",
     documentation: "/images/documentation.jpg",
   },
-  about: "/images/about-pune.jpg",
+  about: "/images/about-industrial-aerial.jpg",
   glance: "/images/glance.jpg",
   sustainability: {
     environment: "/images/sustainability-environment.jpg",

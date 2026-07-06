@@ -22,6 +22,9 @@ export default function AboutSection() {
               forwarding, export-import services, and customs clearance with transparency and
               reliability.
             </p>
+            <p className="mt-4 text-[14px] text-muted leading-[1.8]">
+              We also supply bulk commodities — <strong className="text-navy">Ethanol, Molasses, ENA, Ginger &amp; Garlic</strong> — with integrated logistics for domestic and international buyers.
+            </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={120}>

@@ -77,11 +77,13 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              <li>
-                <a href={`mailto:${companyInfo.email}`} className="hover:text-orange transition-colors break-all">
-                  {companyInfo.email}
-                </a>
-              </li>
+              {companyInfo.displayEmails.map((addr) => (
+                <li key={addr}>
+                  <a href={`mailto:${addr}`} className="hover:text-orange transition-colors break-all">
+                    {addr}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

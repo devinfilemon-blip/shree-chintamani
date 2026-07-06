@@ -143,13 +143,16 @@ export default function ServiceDetail({ service }: { service: ServicePage }) {
                     </span>
                   </a>
                 ))}
-                <a
-                  href={`mailto:${companyInfo.email}`}
-                  className="flex items-center gap-3 text-navy hover:text-orange transition-colors font-semibold"
-                >
-                  <span className="w-9 h-9 rounded-full bg-orange/10 flex items-center justify-center text-orange">✉</span>
-                  {companyInfo.email}
-                </a>
+                {companyInfo.displayEmails.map((addr) => (
+                  <a
+                    key={addr}
+                    href={`mailto:${addr}`}
+                    className="flex items-center gap-3 text-navy hover:text-orange transition-colors font-semibold"
+                  >
+                    <span className="w-9 h-9 rounded-full bg-orange/10 flex items-center justify-center text-orange shrink-0">✉</span>
+                    <span className="break-all">{addr}</span>
+                  </a>
+                ))}
               </div>
               <Link
                 href="/contact"

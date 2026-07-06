@@ -1,6 +1,6 @@
 import { companyInfo } from "../data/companyInfo";
 
-const embedQuery = encodeURIComponent(companyInfo.address.full);
+const embedQuery = encodeURIComponent(companyInfo.mapsEmbedQuery);
 
 export default function ContactMap() {
   return (

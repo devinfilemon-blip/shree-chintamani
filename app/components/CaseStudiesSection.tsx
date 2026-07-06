@@ -28,7 +28,7 @@ export default function CaseStudiesSection() {
         ))}
 
         <div className="absolute bottom-0 left-0 right-0 bg-navy/90">
-          <div className="max-w-[1320px] mx-auto px-4 lg:px-8 py-5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <div className="max-w-[1320px] mx-auto px-4 lg:px-8 py-4 lg:py-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-2">
             {caseStudies.map((s, i) => (
               <button
                 key={s.number}
