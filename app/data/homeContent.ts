@@ -5,7 +5,7 @@ export const heroSlides = [
     title: "Your Gateway to Global Trade.",
     subtitle:
       "Business First • Relationship Forever — your partner in logistics, exports, and bulk commodities.",
-    image: siteImages.hero.ethanolPlant,
+    image: siteImages.hero.sugarcaneHarvest,
   },
   {
     title: "Ethanol, Molasses, ENA, Ginger & Garlic.",

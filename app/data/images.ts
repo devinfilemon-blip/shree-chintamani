@@ -1,6 +1,7 @@
 /** Local site images — stored in /public/images for reliable loading */
 export const siteImages = {
   hero: {
+    sugarcaneHarvest: "/images/hero-sugarcane-harvest.jpg",
     ethanolPlant: "/images/hero-ethanol-plant.png",
     industrialAerial: "/images/hero-industrial-aerial.png",
     warehouse: "/images/hero-warehouse.jpg",
