@@ -15,16 +15,12 @@ function validatePayload(data: ContactPayload): string | null {
   const email = data.email?.trim();
   const phone = data.phone?.trim();
   const subject = data.subject?.trim();
-  const message = data.message?.trim();
 
-  if (!name || !email || !phone || !subject || !message) {
+  if (!name || !email || !phone || !subject) {
     return "Please fill in all required fields.";
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return "Please enter a valid email address.";
-  }
-  if (message.length < 10) {
-    return "Message must be at least 10 characters.";
   }
   return null;
 }
@@ -58,7 +54,7 @@ export async function POST(request: Request) {
     email: body.email.trim(),
     phone: body.phone.trim(),
     subject: body.subject.trim(),
-    message: body.message.trim(),
+    message: body.message.trim() || "—",
   };
 
   try {

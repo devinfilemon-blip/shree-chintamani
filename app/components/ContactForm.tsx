@@ -32,16 +32,12 @@ function validateForm(form: FormState): string | null {
   const email = form.email.trim();
   const phone = form.phone.trim();
   const subject = form.subject.trim();
-  const message = form.message.trim();
 
-  if (!name || !email || !phone || !subject || !message) {
+  if (!name || !email || !phone || !subject) {
     return "Please fill in all required fields.";
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return "Please enter a valid email address.";
-  }
-  if (message.length < 10) {
-    return "Message must be at least 10 characters.";
   }
   return null;
 }
@@ -196,11 +192,10 @@ export default function ContactForm() {
 
           <div>
             <label htmlFor="contact-message" className="block text-white/70 text-xs font-semibold uppercase tracking-wider mb-2">
-              Message <span className="text-orange">*</span>
+              Message <span className="text-white/40 font-normal normal-case">(optional)</span>
             </label>
             <textarea
               id="contact-message"
-              required
               rows={5}
               value={form.message}
               onChange={(e) => update("message", e.target.value)}
