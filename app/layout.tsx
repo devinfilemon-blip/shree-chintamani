@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import AnalyticsScripts from "./components/AnalyticsScripts";
+import CookieConsent from "./components/CookieConsent";
 import { companyInfo } from "./data/companyInfo";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -20,7 +22,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${jakarta.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <CookieConsent />
+        <AnalyticsScripts />
+      </body>
     </html>
   );
 }

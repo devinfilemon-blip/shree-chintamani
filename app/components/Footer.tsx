@@ -1,5 +1,6 @@
 import { footerCompanyLinks, footerProductLinks, footerServiceLinks } from "../data/homeContent";
 import { companyInfo } from "../data/companyInfo";
+import CookieSettingsTrigger from "./CookieSettingsTrigger";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -100,9 +101,10 @@ export default function Footer() {
           <p className="text-center sm:text-left">
             © {new Date().getFullYear()} {companyInfo.name}. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
             <a href="#" className="hover:text-orange transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-orange transition-colors">Cookie Policy</a>
+            <a href="/cookie-policy" className="hover:text-orange transition-colors">Cookie Policy</a>
+            <CookieSettingsTrigger />
           </div>
         </div>
       </div>
