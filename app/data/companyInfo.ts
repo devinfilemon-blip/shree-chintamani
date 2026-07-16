@@ -10,6 +10,7 @@ export const companyInfo = {
     "sales@scleindia.com",
   ],
   whatsapp: "919359394076",
+  instagram: "https://www.instagram.com/shree_chintamani_logistics/",
   phone: "7095950707",
   phoneDisplay: "+91 70959 50707",
   phoneAlt: "9359394076",
