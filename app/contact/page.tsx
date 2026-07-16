@@ -4,11 +4,13 @@ import SocialSidebar from "../components/SocialSidebar";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import { companyInfo } from "../data/companyInfo";
+import { createPageMetadata } from "../lib/seo";
 
-export const metadata: Metadata = {
-  title: `Contact Us | ${companyInfo.shortName}`,
-  description: `Get in touch with ${companyInfo.shortName} for logistics, exports, and bulk supply inquiries.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact Us",
+  description: `Get in touch with ${companyInfo.shortName} for logistics, exports, ethanol, molasses, ENA, ginger, and garlic supply inquiries.`,
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

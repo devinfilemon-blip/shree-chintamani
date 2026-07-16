@@ -5,6 +5,7 @@ import SocialSidebar from "../../components/SocialSidebar";
 import Footer from "../../components/Footer";
 import ServiceDetail from "../../components/ServiceDetail";
 import { getService, services } from "../../data/servicePages";
+import { createPageMetadata } from "../../lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -16,10 +17,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return { title: "Service" };
-  return {
-    title: `${service.title} | SCLE India`,
+  return createPageMetadata({
+    title: service.title,
     description: service.description,
-  };
+    path: `/services/${service.slug}`,
+    image: service.heroImage,
+    keywords: [service.title, "SCLE India", "logistics Pune", "freight forwarding"],
+  });
 }
 
 export default async function ServicePage({ params }: Props) {

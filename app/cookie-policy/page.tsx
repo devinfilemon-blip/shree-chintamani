@@ -3,11 +3,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SocialSidebar from "../components/SocialSidebar";
 import { companyInfo } from "../data/companyInfo";
+import { createPageMetadata } from "../lib/seo";
 
-export const metadata: Metadata = {
-  title: `Cookie Policy | ${companyInfo.shortName}`,
+export const metadata: Metadata = createPageMetadata({
+  title: "Cookie Policy",
   description: `Learn how ${companyInfo.shortName} uses cookies on scleindia.com and how you can manage your preferences.`,
-};
+  path: "/cookie-policy",
+});
 
 const cookieRows = [
   {

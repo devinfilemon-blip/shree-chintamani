@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Header from "./components/Header";
+import { companyInfo } from "./data/companyInfo";
+import { createPageMetadata, defaultDescription } from "./lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: `${companyInfo.shortName} | Logistics & Exports`,
+  description: defaultDescription,
+  path: "/",
+  image: "/images/hero-export.jpg",
+});
 import SocialSidebar from "./components/SocialSidebar";
 import HeroSection from "./components/HeroSection";
 import ProductsGrid from "./components/ProductsGrid";
