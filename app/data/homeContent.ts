@@ -9,9 +9,9 @@ export const heroSlides = [
     image: siteImages.hero.sugarcaneHarvest,
   },
   {
-    title: "Ethanol, Molasses, ENA, Ginger & Garlic.",
+    title: "Ethanol, Molasses & ENA.",
     subtitle:
-      "Bulk supply of premium ethanol, molasses, extra neutral alcohol, ginger, and garlic — with reliable logistics.",
+      "Bulk supply of premium ethanol, molasses, and extra neutral alcohol — with reliable logistics.",
     image: siteImages.hero.industrialAerial,
   },
   {
@@ -195,8 +195,6 @@ export const navLinks: NavLink[] = [
       { label: "Ethanol", href: "/products/ethanol" },
       { label: "Molasses", href: "/products/molasses" },
       { label: "ENA", href: "/products/ena" },
-      { label: "Ginger", href: "/products/ginger" },
-      { label: "Garlic", href: "/products/garlic" },
     ],
   },
   {
@@ -221,8 +219,6 @@ export const footerProductLinks: { label: string; href: string }[] = [
   { label: "Ethanol", href: "/products/ethanol" },
   { label: "Molasses", href: "/products/molasses" },
   { label: "ENA", href: "/products/ena" },
-  { label: "Ginger", href: "/products/ginger" },
-  { label: "Garlic", href: "/products/garlic" },
 ];
 
 export const footerServiceLinks: { label: string; href: string }[] = [

@@ -4,7 +4,7 @@ import { companyInfo } from "../data/companyInfo";
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://scleindia.com";
 
 export const defaultDescription =
-  "Shree Chintamani Logistics & Exports India Pvt. Ltd. — Pune-based freight forwarding, export-import, customs clearance, ethanol, molasses, ENA, ginger & garlic supply.";
+  "Shree Chintamani Logistics & Exports India Pvt. Ltd. — Pune-based freight forwarding, export-import, customs clearance, ethanol, molasses & ENA supply.";
 
 export const defaultKeywords = [
   "SCLE India",
@@ -15,7 +15,6 @@ export const defaultKeywords = [
   "ethanol supplier India",
   "molasses export",
   "ENA supplier",
-  "ginger garlic export",
   "customs clearance Pune",
 ];
 

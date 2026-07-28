@@ -55,9 +55,5 @@ export const siteImages = {
     molassesHero: "/images/molasses-hero.jpg",
     ena: "/images/ena.jpg",
     enaHero: "/images/ena-hero.jpg",
-    ginger: "/images/ginger.jpg",
-    gingerHero: "/images/ginger-hero.jpg",
-    garlic: "/images/garlic.jpg",
-    garlicHero: "/images/garlic-hero.jpg",
   },
 };

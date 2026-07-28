@@ -8,7 +8,7 @@ import { createPageMetadata } from "../lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
-  description: `Get in touch with ${companyInfo.shortName} for logistics, exports, ethanol, molasses, ENA, ginger, and garlic supply inquiries.`,
+  description: `Get in touch with ${companyInfo.shortName} for logistics, exports, ethanol, molasses, and ENA supply inquiries.`,
   path: "/contact",
 });
 

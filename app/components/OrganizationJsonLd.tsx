@@ -10,7 +10,7 @@ export default function OrganizationJsonLd() {
     url: siteUrl,
     logo: absoluteUrl("/images/logo.png"),
     description:
-      "Pune-based logistics and exports company supplying ethanol, molasses, ENA, ginger, garlic, and international freight services.",
+      "Pune-based logistics and exports company supplying ethanol, molasses, ENA, and international freight services.",
     email: companyInfo.email,
     telephone: companyInfo.phoneDisplay,
     address: {

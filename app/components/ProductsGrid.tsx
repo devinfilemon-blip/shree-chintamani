@@ -73,9 +73,8 @@ export default function ProductsGrid() {
             <h2 className="section-heading">Our Products &amp; Services</h2>
             <div className="w-12 h-1 bg-orange mx-auto mt-5 mb-5" />
             <p className="text-muted text-sm lg:text-base max-w-2xl mx-auto leading-relaxed">
-              Bulk supply of <strong className="text-navy">Ethanol</strong>, <strong className="text-navy">Molasses</strong>,{" "}
-              <strong className="text-navy">ENA</strong>, <strong className="text-navy">Ginger</strong> &amp;{" "}
-              <strong className="text-navy">Garlic</strong> — plus end-to-end logistics and export solutions.
+              Bulk supply of <strong className="text-navy">Ethanol</strong>, <strong className="text-navy">Molasses</strong> &amp;{" "}
+              <strong className="text-navy">ENA</strong> — plus end-to-end logistics and export solutions.
             </p>
           </div>
         </AnimateOnScroll>
@@ -85,7 +84,7 @@ export default function ProductsGrid() {
           <h3 className="text-center text-sm font-bold text-navy uppercase tracking-[0.15em] mb-6">
             Our Commodity Products
           </h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-6 max-w-4xl mx-auto">
             {saleProducts.map((p, i) => (
               <CommodityCard key={p.slug} product={p} delay={i * 80} />
             ))}

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <Logo variant="light" className="mb-5" />
             <p className="text-white/60 text-sm leading-relaxed max-w-sm">
-              {companyInfo.bannerSlogan}. Pune-based logistics, exports, ethanol, molasses, ENA, ginger &amp; garlic supply.
+              {companyInfo.bannerSlogan}. Pune-based logistics, exports, ethanol, molasses &amp; ENA supply.
             </p>
           </div>
 

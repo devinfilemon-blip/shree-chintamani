@@ -6,7 +6,7 @@ export type SaleProductPage = {
   subtitle: string;
   heroImage: string;
   cardImage: string;
-  icon: "ethanol" | "molasses" | "ena" | "ginger" | "garlic";
+  icon: "ethanol" | "molasses" | "ena";
   tagline: string;
   description: string;
   highlights: string[];
@@ -119,76 +119,6 @@ export const saleProducts: SaleProductPage[] = [
       "Integrated logistics for safe liquid transport",
       "Dedicated sales team for pricing and scheduling",
       "Long-term partnership approach",
-    ],
-  },
-  {
-    slug: "ginger",
-    title: "Ginger",
-    subtitle: "Premium fresh & dried ginger for domestic and export markets",
-    heroImage: siteImages.saleProducts.gingerHero,
-    cardImage: siteImages.saleProducts.ginger,
-    icon: "ginger",
-    tagline: "High-quality ginger — sourced, packed, and shipped with care",
-    description:
-      "We supply premium ginger for wholesalers, food processors, and export buyers. From fresh rhizomes to dried and processed grades, our ginger is sourced through trusted networks and delivered with full export documentation and reliable logistics from Pune.",
-    highlights: [
-      "Fresh and dried ginger grades available",
-      "Export-quality sorting and packaging support",
-      "Bulk supply for domestic and international buyers",
-      "Full customs and phytosanitary documentation",
-    ],
-    applications: [
-      "Food processing and spice manufacturing",
-      "Retail and wholesale distribution",
-      "Pharmaceutical and ayurvedic industries",
-      "Export to Middle East, Europe, and Asian markets",
-    ],
-    specs: [
-      { label: "Product", value: "Fresh & dried ginger" },
-      { label: "Supply", value: "Bulk bags & containerized loads" },
-      { label: "Origin", value: "India" },
-      { label: "Documentation", value: "Export-import compliance support" },
-    ],
-    whyUs: [
-      "Integrated export logistics from Pune hub",
-      "Quality-checked batches with consistent supply",
-      "Competitive pricing for bulk orders",
-      "Single contact for sourcing and shipment",
-    ],
-  },
-  {
-    slug: "garlic",
-    title: "Garlic",
-    subtitle: "Fresh & bulk garlic for trade and export",
-    heroImage: siteImages.saleProducts.garlicHero,
-    cardImage: siteImages.saleProducts.garlic,
-    icon: "garlic",
-    tagline: "Quality garlic supply — from farm gate to global markets",
-    description:
-      "We offer garlic for bulk buyers, traders, and exporters. Our supply covers fresh garlic suitable for food industry, retail chains, and international markets — backed by dependable logistics, packaging coordination, and export clearance support.",
-    highlights: [
-      "Fresh bulk garlic for domestic and export trade",
-      "Consistent grading and quality selection",
-      "Container and bulk shipment coordination",
-      "Export documentation and port handling",
-    ],
-    applications: [
-      "Food manufacturing and spice blending",
-      "Wholesale and retail supply chains",
-      "Export to Gulf, Southeast Asia, and Europe",
-      "Dehydrated and processed garlic industries",
-    ],
-    specs: [
-      { label: "Product", value: "Fresh bulk garlic" },
-      { label: "Supply", value: "Bulk bags & export containers" },
-      { label: "Origin", value: "India" },
-      { label: "Documentation", value: "Full trade compliance support" },
-    ],
-    whyUs: [
-      "End-to-end export handling from Maharashtra",
-      "Reliable scheduling and dispatch",
-      "Transparent pricing with dedicated sales support",
-      "Trusted partner for agri-commodity trade",
     ],
   },
 ];

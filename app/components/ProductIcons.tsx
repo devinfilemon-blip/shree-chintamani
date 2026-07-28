@@ -135,25 +135,6 @@ export function IconEna(p: IconProps) {
   );
 }
 
-export function IconGinger(p: IconProps) {
-  return (
-    <svg viewBox="0 0 48 48" {...p}>
-      <path d="M14 32c4-10 8-16 14-18 2 6 2 12-2 18M28 14c6 2 10 8 10 16" {...stroke} />
-      <path d="M20 20c2 4 2 8 0 12" {...stroke} />
-      <ellipse cx="24" cy="36" rx="14" ry="4" {...stroke} />
-    </svg>
-  );
-}
-
-export function IconGarlic(p: IconProps) {
-  return (
-    <svg viewBox="0 0 48 48" {...p}>
-      <path d="M24 8c-4 6-6 12-6 20v8h12v-8c0-8-2-14-6-20z" {...stroke} />
-      <path d="M18 36h12M20 12l4-4 4 4M22 16h4" {...stroke} />
-    </svg>
-  );
-}
-
 export const productIcons: Record<string, (p: IconProps) => React.ReactElement> = {
   truck: IconTruck,
   globe: IconGlobe,
@@ -165,8 +146,6 @@ export const productIcons: Record<string, (p: IconProps) => React.ReactElement> 
   ethanol: IconEthanol,
   molasses: IconMolasses,
   ena: IconEna,
-  ginger: IconGinger,
-  garlic: IconGarlic,
 };
 
 export const pillarIcons: Record<string, (p: IconProps) => React.ReactElement> = {
