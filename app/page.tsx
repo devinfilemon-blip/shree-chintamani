@@ -15,7 +15,6 @@ import ProductsGrid from "./components/ProductsGrid";
 import AboutSection from "./components/AboutSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import GlanceSection from "./components/GlanceSection";
-import CompanyPromoSection from "./components/CompanyPromoSection";
 import AnnualReportVideos from "./components/AnnualReportVideos";
 import Footer from "./components/Footer";
 
@@ -27,7 +26,6 @@ export default function Home() {
       <main>
         <HeroSection />
         <ProductsGrid />
-        <CompanyPromoSection />
         <AboutSection />
         <CaseStudiesSection />
         <GlanceSection />
